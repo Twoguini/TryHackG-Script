@@ -34,7 +34,8 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    margin-top: 88px;
+    padding-top: 88px;
+    height: 85vh;
 }
 
 div.center {
@@ -49,6 +50,7 @@ div.center {
 div.M_IMG {
     margin: auto;
     background-color: var(--light-gray_opacity25);
+    height: 88px;
 }
 
 .Title_IMG {
@@ -56,8 +58,9 @@ div.M_IMG {
 }
 
 #banner {
-    background-image: url(images/1°BackIMG.jpg);
-    background-size: cover;
     height: 100%;
     width: 100%;
+    background-image: url(images/1°BackIMG.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
