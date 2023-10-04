@@ -21,4 +21,5 @@
 
 *{
     background-color: var(--light-white);
+    margin: 0;
 }
