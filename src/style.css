@@ -20,60 +20,119 @@
     --light-terciary: #F34DFF;
 }
 
+/* 
+    PascalCase
+    camelCase
+    snake_case
+
+    class-name
+*/
+
 * {
     margin: 0;
 }
 
 header {
-    position: fixed;
     width: 100%;
     height: 88px;
+    background-color: var(--light-gray_opacity25);
 }
 
 main {
     display: flex;
     flex-direction: column;
-    padding-top: 83px;
     width: 100%;
     height: 100%;
 }
 
 .center {
     display: flex;
-    width: 100%;
-    height: 100%;
     vertical-align: middle;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-div.M_IMG {
-    margin: auto;
-    background-color: var(--light-gray_opacity25);
-    height: 88px;
+nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
 }
 
-.Title_IMG {
-    background-color: var(--light-gray);
+div.main-image {
+    height: 88px;
+    display: flex;
+    align-items: center;
+}
+
+.title-image {
+    height: 63px;
+}
+
+.navbar-main-container{
+    margin-left: 15px;
+}
+
+div.nav-items-container{
+    width: 75px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-containers{
+    border-left: 2px solid var(--darker-white);
+    border-right: 2px solid var(--darker-white);
+    height: 58px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.nav-containers:hover{
+    border-left: 2px solid var(--light-primary);
+    border-right: 2px solid var(--light-primary);
+}
+
+.nav-containers:hover .nav-text{
+    color: var(--light-primary);
+}
+
+.nav-containers:hover .nav-icone{
+    fill: var(--light-primary);
+}
+
+svg.nav-icone{
+    fill: var(--darker-white);
+    width: 45px;
+    height: 40px;
+
+}
+
+h5.nav-text{
+    color: var(--darker-white);
+    font-size: 18px;
 }
 
 #banner-container {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     background-image: url(images/1°BackIMGTESTE.jpg);
     background-size: cover;
 }
 
-.Title{
+.title{
     color: var(--darker-primary);
     margin-top: -15vh;
-    font-size: 1400%;
-    font-family: 'Gill Sans';
+    font-size: 150px;
+    font-family:Arial, Helvetica, sans-serif;
     text-align: center;
     margin-top: 7vh;
     text-decoration: underline var(--darker-primary) 2vh;
-    text-underline-offset: 25px;
+    text-underline-offset: 17px;
 
     -webkit-text-stroke: 3px var(--light-gray);
 
@@ -90,8 +149,9 @@ a#white{
     text-decoration: underline var(--darker-primary) 2vh;
 }
 
-.subTitle{
-    font-size: 450%;
+.sub-title{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--light-white);
     -webkit-text-stroke: 1px var(--light-gray);
     text-align: center;
