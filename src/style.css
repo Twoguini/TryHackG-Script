@@ -20,14 +20,6 @@
     --light-terciary: #F34DFF;
 }
 
-/* 
-    PascalCase
-    camelCase
-    snake_case
-
-    class-name
-*/
-
 * {
     margin: 0;
 }
@@ -63,7 +55,9 @@ nav{
 div.main-image {
     height: 88px;
     display: flex;
+    padding-inline: 10px;
     align-items: center;
+    justify-content: right;
 }
 
 .title-image {
@@ -71,30 +65,62 @@ div.main-image {
 }
 
 .navbar-main-container{
-    margin-left: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 div.nav-items-container{
-    width: 75px;
+    max-width: fit-content;
+    min-width: 75px;
     height: 60px;
     text-align: center;
     align-items: center;
     margin: auto;
 }
 
-.nav-containers{
+.vertical-line{
+    border: var(--darker-white) 1px solid;
+    height: 56px;
+    border-radius: 25px;
+}
+
+#left-div-line{
     border-left: 2px solid var(--darker-white);
-    border-right: 2px solid var(--darker-white);
-    height: 58px;
     border-radius: 3px;
+}
+
+#right-div-line{
+    border-right: 2px solid var(--darker-white);
+    border-radius: 3px;
+}
+
+.nav-containers{
+    height: 58px; 
     display: flex;
     align-items: center;
     width: fit-content;
+    padding-inline: 10px;
 }
 
-.nav-containers:hover{
+#objetivo-navbar{
+    border-right: 2px solid var(--darker-white);
+}
+
+.middle-containers{
+    border-left: 2px solid var(--darker-white);
+    line-height: 5px;
+}
+
+#left-div-line:hover{
     border-left: 2px solid var(--light-primary);
+}
+#right-div-line:hover{
     border-right: 2px solid var(--light-primary);
+}
+
+.nav-containers:hover .vertical-line{
+    border: 2px solid var(--darker-primary);
 }
 
 .nav-containers:hover .nav-text{
@@ -107,9 +133,9 @@ div.nav-items-container{
 
 svg.nav-icone{
     fill: var(--darker-white);
-    width: 45px;
-    height: 40px;
-
+    width: 40px;
+    height: 38px;
+    padding: 2px;
 }
 
 h5.nav-text{
@@ -134,8 +160,6 @@ h5.nav-text{
     text-decoration: underline var(--darker-primary) 2vh;
     text-underline-offset: 17px;
 
-    -webkit-text-stroke: 3px var(--light-gray);
-
     /*NOTE: its an option*/
     /*font-weight: bolder;
     text-shadow: 15px 5px 8px var(--light-primary);
@@ -145,7 +169,6 @@ h5.nav-text{
 
 a#white{
     color: var(--light-white);
-    -webkit-text-stroke: 5px var(--light-gray);
     text-decoration: underline var(--darker-primary) 2vh;
 }
 
@@ -153,6 +176,5 @@ a#white{
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--light-white);
-    -webkit-text-stroke: 1px var(--light-gray);
     text-align: center;
 }
